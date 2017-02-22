@@ -1,0 +1,24 @@
+﻿@model IEnumerable<MVCTest.Models.Person>
+<table class="table table-bordered">
+   @foreach (var Item in Model)
+   {
+    <tr>
+        <td class="success"><b>Name</b></td>
+        <td class="active">@Item.Name</td>
+    </tr>
+    <tr>
+        <td class="active"><b>Cellphone</b></td>
+        <td>@Item.Cellphone</td>
+    </tr>
+    <tr>
+        <td class="active"><b>City</b></td>
+        <td>@Item.City</td>
+    </tr>
+    <tr>
+        <td class="active"><b>Country</b></td>
+        <td>@Item.Country</td>
+    </tr>
+   }
+</table>
+
+@*<h2> It was working before ...</h2>*@
